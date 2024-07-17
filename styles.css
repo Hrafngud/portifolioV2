@@ -1,0 +1,295 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    /* Font Families */
+    --font-primary: 'Exo', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+    
+    /* Color Palette */
+    --primary-bg-color: #0A192F;
+    --primary-text-color: #E0E5EC;
+    --secondary-bg-color: #114029;
+    --secondary-text-color: #A8B2D1;
+    --accent-color: #64FFDA;
+    --highlight-color: #1E90FF;
+    
+    /* Container */
+    --container-max-width: 1100px;
+    --header-padding: 50px 0;
+    --section-padding: 40px 0;
+    --about-bg-color: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    --skills-bg-color: rgba(255, 255, 255, 0.1);
+    --skills-text-color: #E0E5EC;
+    --projects-bg-color: #0A192F;
+    --project-card-bg-color: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    --project-card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --footer-padding: 20px 0;
+    
+    /* Skill Colors */
+    --nodejs-color: #68A063;
+    --react-color: #61DBFB;
+    --tailwind-color: #38B2AC;
+    --html-css-color: #F16529;
+    --js-color: #F0DB4F;
+
+    /* Glassmorphism */
+    --glass-background: rgba(255, 255, 255, 0.1);
+    --glass-blur: 10px;
+    --glass-border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 8px solid var(--secondary-bg-color);
+    border-radius: 50%;
+    border-top: 8px solid var(--highlight-color);
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide content before load */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Other existing styles... */
+body {
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, var(--highlight-color), var(--primary-bg-color));
+    color: var(--primary-text-color);
+    padding: var(--header-padding);
+}
+
+header h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+}
+
+section {
+    padding: var(--section-padding);
+}
+
+.about {
+    background: var(--glass-background);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: var(--glass-border);
+    padding: 20px;
+}
+
+.sectiontitle {
+    padding-left: 7em;
+    margin-bottom: 1em;
+    font-family: var(--font-primary);
+}
+
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.skills li {
+    margin: 5px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    background: var(--glass-background);
+    color: var(--skills-text-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills li i {
+    margin-right: 10px;
+    padding: 0.5rem;
+    font-size: 2.5em; /* Adjust icon size */
+}
+
+/* Using CSS Variables for skill colors */
+.skills li:nth-child(1) {
+    color: var(--nodejs-color); /* Node.js */
+}
+
+.skills li:nth-child(2) {
+    color: var(--react-color); /* React */
+}
+
+.skills li:nth-child(3) {
+    color: var(--tailwind-color); /* Tailwind CSS */
+}
+
+.skills li:nth-child(4) {
+    color: var(--html-css-color); /* HTML5 & CSS3 */
+}
+
+.skills li:nth-child(5) {
+    color: var(--js-color); /* JavaScript (ES6+) */
+}
+
+.projects, .articles {
+    background-color: var(--projects-bg-color);
+}
+
+.articles > .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3em;
+}
+.projects > .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.project, .article {
+    background: var(--project-card-bg-color);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: var(--glass-border);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--project-card-box-shadow);
+    cursor: pointer;
+    width: 100%;
+    height: 28vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project > p, .article > p {
+    background-color: var(--glass-background);
+    padding: 1em;
+    border-radius: 8px;
+}
+
+footer {
+    background: linear-gradient(135deg, var(--highlight-color), var(--primary-bg-color));
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: var(--footer-padding);
+    width: 100%;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn > i {
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--highlight-color);
+}
+
+
+/* Responsive styles */
+@media (max-width: 1000px) {
+    .project, .article {
+        width: 100%; /* One card per row */
+    }
+
+    .projects .container, .articles .container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .sectiontitle {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .skills li {
+        padding: 10px;
+    }
+
+    .projects .container, .articles .container {
+        flex-direction: column;
+        gap: 1em;
+    }
+}

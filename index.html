@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/5bf3ead0a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    
+    <div id="content" class="hidden">
+        <header>
+            <div class="container animate__animated animate__fadeIn">
+                <h1>João Davi</h1>
+                <p>Desenvolvedor Full-Stack</p>
+            </div>
+        </header>
+
+        <section class="about animate__animated animate__fadeIn">
+            <div class="container">
+                <h2>Sobre mim:</h2>
+                <p> Me chamo João Davi, sou desenvolvedor Full-Stack e trabalho criando soluções para as mais diversas questões utilizando ferramentas web.</p>
+            </div>
+        </section>
+
+        <section class="skills animate__animated animate__fadeIn">
+            <h2 class="sectiontitle">Minhas ferramentas preferidas:</h2>
+            <div class="container">
+                <ul>
+                    <li><i class="fab fa-node-js"></i> Node.js</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fas fa-paint-brush"></i> Tailwind CSS</li>
+                    <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                    <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects animate__animated animate__fadeIn">
+            <h2 class="sectiontitle">Projetos mais recentes:</h2>
+            <div class="container">
+                <div class="project" data-id="1" onclick="loadProject(1)">
+                    <h3>Página de Hotel</h3>
+                    <p>Página de hotel desenvolvida com Tailwind CSS.</p>
+                </div>
+                <div class="project" data-id="2" onclick="loadProject(2)">
+                    <h3>Aplicativo de Relatórios</h3>
+                    <p>Aplicativo para criação e exportação de formulários e relatórios.</p>
+                </div>
+                <div class="project" data-id="3" onclick="loadProject(3)">
+                    <h3>Framework CSS</h3>
+                    <p>Framework CSS que facilita a estilização rápida de páginas web.</p>
+                </div>
+                <div class="project" data-id="4" onclick="loadProject(4)">
+                    <h3>Ads Manager</h3>
+                    <p>Gerenciamento de Campanhas com Javascript.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section class="articles animate__animated animate__fadeIn">
+            <h2 class="sectiontitle">Artigos úteis:</h2>
+            <div class="container">
+                <div class="article" data-id="1" onclick="loadArticle(1)">
+                    <h3>O que é PWA (progressive web application)?</h3>
+                    <p>O que são PWA's e seus casos de uso.</p>
+                </div>
+                <div class="article" data-id="2" onclick="loadArticle(2)">
+                    <h3>VPS x Hospedagem Compartilhada</h3>
+                    <p>Diferenças entre VPS e hospedagem compartilhada.</p>
+                </div>
+                <div class="article" data-id="3" onclick="loadArticle(3)">
+                    <h3>Domínio e Hospedagem</h3>
+                    <p>O que é Domínio e Hospedagem?.</p>
+                </div>
+                <div class="article" data-id="4" onclick="loadArticle(4)">
+                    <h3>Software: Produto versus Problema</h3>
+                    <p>Racionalmente, por que criamos software?</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="animate__animated animate__fadeIn">
+            <div class="container">
+                <p>&copy; 2024 João Davi Oliveira, Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-HdCvV3vZ/+PnDThp5yEfR1oP6yYtyJg3I8WttkMlmm8Hwr5+IlnObyXjD8I9Z6IDASD5Mk/7/ObzRwH2XG8IzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
