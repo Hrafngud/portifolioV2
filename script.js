@@ -15,7 +15,7 @@ const projects = [
         id: 3,
         title: "Framework CSS para Estilização Rápida",
         description: "Framework CSS que facilita a estilização rápida de páginas web, oferecendo uma variedade de componentes pré-estilizados. Inclui elementos como cabeçalhos, rodapés, containers, paginação, botões e outros elementos comuns em desenvolvimento web. Desenvolvido para acelerar o processo de criação de interfaces, permitindo ajustes conforme a necessidade do projeto. O framework é altamente personalizável, proporcionando flexibilidade na estilização básica de páginas.",
-        videoUrl: "videos/video3.mp4"
+        videoUrl: "videos/Video3.mp4"
     },
     {
         id: 4,
