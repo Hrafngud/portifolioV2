@@ -195,6 +195,7 @@ section {
 }
 .projects > .container {
     display: flex;
+    width: 100%;
     align-items: start;
     justify-content: space-between;
     flex-direction: row;
@@ -211,16 +212,24 @@ section {
     box-shadow: var(--project-card-box-shadow);
     cursor: pointer;
     width: 100%;
-    height: 28vh;
+    height: 35vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    font-size: 0.9rem;
 }
 
 .project > p, .article > p {
     background-color: var(--glass-background);
     padding: 1em;
     border-radius: 8px;
+}
+
+#project-video {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 90%;
+    height: auto;
 }
 
 footer {
@@ -244,6 +253,8 @@ footer {
     font-size: 1rem;
     transition: background-color 0.3s;
     margin-top: 20px;
+    margin-left: 6em;
+    margin-bottom: 1em;
 }
 
 .btn > i {
@@ -251,6 +262,7 @@ footer {
     width: 100%;
     height: auto;
     color: white;
+    padding-right: 1em;
 }
 
 .btn:hover {
