@@ -9,13 +9,13 @@ const projects = [
         id: 2,
         title: "Aplicativo de Geração de PDFs com Node.js",
         description: "Aplicativo desenvolvido com Node.js, Express e MySQL, que permite a criação de formulários exportáveis em formato PDF. Os dados dos formulários são armazenados em um banco de dados MySQL e podem ser visualizados em uma tabela interativa, com filtros por data de criação e nome do campo 'empreendimento'. Inclui a opção de exportação dos dados em formato CSV, integrando funcionalidades para geração e exportação de documentos.",
-        videoUrl: "videos/video2.mp4"
+        videoUrl: "videos/Video2.mp4"
     },
     {
         id: 3,
         title: "Framework CSS para Estilização Rápida",
         description: "Framework CSS que facilita a estilização rápida de páginas web, oferecendo uma variedade de componentes pré-estilizados. Inclui elementos como cabeçalhos, rodapés, containers, paginação, botões e outros elementos comuns em desenvolvimento web. Desenvolvido para acelerar o processo de criação de interfaces, permitindo ajustes conforme a necessidade do projeto. O framework é altamente personalizável, proporcionando flexibilidade na estilização básica de páginas.",
-        videoUrl: "videos/Video3.mp4"
+        videoUrl: "videos/video3.mp4"
     },
     {
         id: 4,
