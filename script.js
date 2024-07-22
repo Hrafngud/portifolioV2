@@ -3,25 +3,25 @@ const projects = [
         id: 1,
         title: "Página de Hotel em Tailwind",
         description: "Página de hotel desenvolvida com Tailwind CSS, apresentando navegação intuitiva e várias sessões temáticas. Inclui uma sessão principal com informações gerais, uma sessão de acomodações detalhada, uma sessão de atrações locais e um mapa interativo para localização do hotel. Cada sessão é estilizada para proporcionar uma experiência de usuário agradável e visualmente atraente, demonstrando a versatilidade do Tailwind CSS em criar interfaces modernas e responsivas.",
-        videoUrl: "/videos/video1.mp4"
+        videoUrl: "videos/video1.mp4"
     },
     {
         id: 2,
         title: "Aplicativo de Geração de PDFs com Node.js",
         description: "Aplicativo desenvolvido com Node.js, Express e MySQL, que permite a criação de formulários exportáveis em formato PDF. Os dados dos formulários são armazenados em um banco de dados MySQL e podem ser visualizados em uma tabela interativa, com filtros por data de criação e nome do campo 'empreendimento'. Inclui a opção de exportação dos dados em formato CSV, integrando funcionalidades para geração e exportação de documentos.",
-        videoUrl: "/videos/video2.mp4"
+        videoUrl: "videos/Video2.mp4"
     },
     {
         id: 3,
         title: "Framework CSS para Estilização Rápida",
         description: "Framework CSS que facilita a estilização rápida de páginas web, oferecendo uma variedade de componentes pré-estilizados. Inclui elementos como cabeçalhos, rodapés, containers, paginação, botões e outros elementos comuns em desenvolvimento web. Desenvolvido para acelerar o processo de criação de interfaces, permitindo ajustes conforme a necessidade do projeto. O framework é altamente personalizável, proporcionando flexibilidade na estilização básica de páginas.",
-        videoUrl: "/videos/video3.mp4"
+        videoUrl: "videos/video3.mp4"
     },
     {
         id: 4,
         title: "Gerenciamento de Campanhas de Anúncio em JavaScript",
         description: "Tela de gerenciamento de campanhas de anúncios desenvolvida com JavaScript Vanilla e CSS, utilizando a biblioteca Tabulator.js para exibição de dados. Permite visualizar campanhas de anúncios, grupos de anúncios e anúncios individuais de maneira concatenada, com diversos filtros e interações disponíveis. Demonstra a criação de interfaces complexas e interativas, proporcionando uma ferramenta eficiente para gestão e análise de campanhas publicitárias, evidenciando habilidades em manipulação de DOM e criação de experiências de usuário dinâmicas.",
-        videoUrl: "/videos/video4.mp4"
+        videoUrl: "videos/video4.mp4"
     }
 ];
 
