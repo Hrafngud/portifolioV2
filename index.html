@@ -15,34 +15,44 @@
     </div>
     
     <div id="content" class="hidden">
-        <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#top"><i class="fas fa-home"></i>Início</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i>Ferramentas</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i>Projetos</a></li>
+                <li><a href="#articles"><i class="fas fa-newspaper"></i>Artigos</a></li>
+            </ul>
+          </nav>
+
+        <header id="top">
             <div class="container animate__animated animate__fadeIn">
-                <h1>João Davi</h1>
-                <p>Desenvolvedor Full-Stack</p>
+                <h1>João Davi O.</h1>
+                <p> 🇧🇷 </p>
+                <p>Desenvolvedor Web Full-Stack</p>
             </div>
         </header>
 
         <section class="about animate__animated animate__fadeIn">
             <div class="container">
                 <h2>Sobre mim:</h2>
-                <p> Me chamo João Davi, sou desenvolvedor Full-Stack e trabalho criando soluções para as mais diversas questões utilizando ferramentas web.</p>
+                <p> Olá! Seja bem vindo! Me chamo João Davi e sou um desenvolvedor de software, e trabalho com conhecimentos adquiridos principalmente de maneira auto-didata, tendo realizado também o curso de Técnico de Informática pelo Instututo Federal do Rio de Janeiro (incompleto) e também realizado o curso superior de Análise e Desenvolvimento de Sistemas (incompleto) no SENAC EAD polo Nova Friburgo, de abril de 2021 a abriil de 2022. Meu interesse por desenvolvimento surgiu com a curiosidade em relação ao desenvolvimento de games, e posteriormente dando início no mercado profissional criando pequenas soluções para demandas diversas. A partir de 2024 comecei a atuar como Freelancer na plataforma Workana, tendo realizado também alguns projetos onde foram empregadas habilidades de front-end, back-end e também webdesign (UX/UI). Meu estilo de desenvolvimento é voltado a criação de soluções pertinentes as necessidades apresentadas, e procuro trazer sempre um código limpo, modularizado, de bom desempenho e bem documentado.</p>
             </div>
         </section>
 
-        <section class="skills animate__animated animate__fadeIn">
+        <section id="skills" class="skills animate__animated animate__fadeIn">
             <h2 class="sectiontitle">Minhas ferramentas:</h2>
             <div class="container">
                 <ul>
-                    <li><i class="fab fa-node-js"></i> Node.js</li>
-                    <li><i class="fab fa-react"></i> React</li>
-                    <li><i class="fas fa-paint-brush"></i> Tailwind CSS</li>
-                    <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                    <li><i class="fab fa-node-js"></i> Node.js </li>
+                    <li><i class="fab fa-react"></i> React </li>
+                    <li><i class="fab fa-css3"></i> Tailwind/CSS3 </li>
+                    <li><i class="fab fa-html5"></i> HTML5 </li>
                     <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
                 </ul>
             </div>
         </section>
 
-        <section class="projects animate__animated animate__fadeIn">
+        <section id="projects" class="projects animate__animated animate__fadeIn">
             <h2 class="sectiontitle">Projetos mais recentes:</h2>
             <div class="container">
                 <div class="project" data-id="1" onclick="loadProject(1)">
@@ -65,7 +75,7 @@
             </div>
         </section>
 
-        <section class="articles animate__animated animate__fadeIn">
+        <section id="articles" class="articles animate__animated animate__fadeIn">
             <h2 class="sectiontitle">Artigos úteis:</h2>
             <div class="container">
                 <div class="article" data-id="1" onclick="loadArticle(1)">
@@ -89,7 +99,7 @@
 
         <footer class="animate__animated animate__fadeIn">
             <div class="container">
-                <p>&copy; 2024 João Davi Oliveira, Todos os direitos reservados.</p>
+                <p>2024 - João Davi O.</p>
             </div>
         </footer>
     </div>
