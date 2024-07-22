@@ -16,7 +16,6 @@ This is a static portfolio page designed to showcase projects and articles dynam
 1. **Introduction:** A brief introduction about yourself.
 2. **Projects:** Displays a list of projects with descriptions and links.
 3. **Articles:** Displays a list of articles with descriptions and links.
-4. **Contact:** A simple contact form for visitors to reach out.
 
 ## Technologies Used
 
